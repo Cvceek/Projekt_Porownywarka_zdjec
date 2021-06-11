@@ -1,0 +1,123 @@
+body{
+    margin:0;
+    padding:0;
+    font-size:100%;
+    line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(5, 6, 53);
+  }
+
+#wrapper{
+    position: relative;
+    width: 50%;
+    min-height: 45vw;
+    overflow: hidden;
+    border-radius: 15px;
+    left: 25%;
+}
+
+.layer{
+    position:absolute;
+    width: 100vw;
+    min-height: 55vw;
+    overflow: hidden;
+
+}
+
+.layer .content-wrap{
+    position: absolute;
+    width: 100vw;
+    min-height: 55vw;
+}
+
+
+.layer img{
+    position: absolute;
+    width: 50%;
+    top: 40%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+.layer h1{
+    font-size: 2em;
+}
+
+.bottom{
+    z-index: 1;
+    width: -50vw;
+    
+}
+
+.top{
+    z-index:2;
+    width: 50vw;
+    background-color:rgb(5, 6, 53);
+}
+
+
+.handle{
+    position: absolute;
+    height: 100%;
+    display: block;
+    background-color: #db28ae;
+    width: 5px;
+    top: 0;
+    left: 50%;
+    z-index: 3;
+}
+
+.skewed .handle{
+    top: 50%;
+    transform:  translateY(-50%);
+    height: 200%;
+    transform-origin: top;
+}
+
+.skewed .top{
+    transform: skew(0deg);
+    margin-left: -1000px;
+    width: calc(50vw + 1000px);
+}
+.skewed .top .content-wrap{
+    transform: skew(0deg);
+    margin-left: 1000px;
+}
+@media(max-width:768px){
+    body{
+        font-size: 75%;
+    }
+}
+
+#label1 {
+    font-size: 2vw;
+    position: absolute; 
+    cursor: pointer;
+    color: #db28ae;
+    font-family: capital clickbait;
+    right: 0.5vw; 
+    background-color: #db28ae3b;
+    padding-top: 15vw;
+    padding-bottom: 15vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    top: 10vw;
+    border-radius: 5vw;
+    
+}
+
+#label2 {
+    font-size: 1.8vw;
+    position: absolute;
+    cursor: pointer; 
+    color: #db28ae;
+    font-family: capital clickbait;
+    top: 10vw;
+    padding-top: 15vw;
+    padding-bottom: 15vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    left: 0.5vw;
+    background-color: #db28ae3b;
+    border-radius: 5vw;
+}
+

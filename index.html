@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <input type="file"  accept="image/*" name="image" id="zdj2"  onchange="otworzZdj2(event)" style="display: none;">
+    <label for="zdj2" id="label2">Wybierz pierwsze zdjecie</label>
+
+
+    <input type="file"  accept="image/*" name="image" id="zdj1"  onchange="otworzZdj1(event)" style="display: none;">
+    <label for="zdj1" id="label1">Wybierz drugie zdjecie</label>
+  
+
+    <h1 id="tytul"></h1>
+    <section id="wrapper" class="skewed">
+        
+      <div class="layer bottom">
+          <div class="content-wrap">
+            <p><img id="output1" width="200" /></p>
+          </div>
+      </div>
+      
+      <div class="layer top">
+        <div class="content-wrap">
+            <p><img id="output2" width="200" /></p>
+        </div>
+    </div>
+
+    <div class="handle"></div>
+    
+    </section>
+
+    
+    <script src="skrypt.js"></script>
+</body>
+</html>
